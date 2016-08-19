@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'carros',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -123,3 +124,6 @@ STATIC_URL = '/static/'
 
 REST_FRAMEWORK = {'DEFAULT_PERMISSION_CLASSES':[
 'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly']}
+
+
+CORS_ORIGIN_ALLOW_ALL = True 

@@ -9,7 +9,7 @@ class CarroListView(generics.ListAPIView):
 	queryset = Carro.objects.all()
 	serializer_class =  CarroSerializer
 
-class CarroListView(generics.RetrieveAPIView):
+class CarroDetailView(generics.RetrieveAPIView):
 	queryset = Carro.objects.all()
 	serializer_class = CarroSerializer
 
